@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cloudify - Get live weather data from around the globe</title>
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google Fonts Link -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <!-- Animate On Scroll Link -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <!-- Title -->
+  <h1>Cloudify</h1>
+  <form action="/" method="post">
+    <input type="text" name="cityName" placeholder="Enter City Name">
+    <button type="submit" name="button">→</button>
+  </form>
+
+  <!-- Main Weather Data Content -->
+
+  <% if ( city.length !== 0){ %>
+  <div class="weather" data-aos="flip-left">
+    <div data-aos="zoom-in">
+      <h2><%= currentDate %></h2>
+      <h2 class="city"><%= city %></h2>
+      <img src=<%= finalIcon %> alt="">
+      <h2 class="temp"><%= finalTemp %> ° C</h2>
+      <h2 class="desc">You may experience <%= finalDesc %> today.</h2>
+    </div>
+  </div>
+  <%  } else {} %>
+
+  <!-- Animate On Scroll -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1600,
+      once: true
+    });
+  </script>
+</body>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; Cassablonka Pimpalapure</p>
+</footer>
+
+</html>

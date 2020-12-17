@@ -1,0 +1,107 @@
+/* General CSS */
+body {
+  background-image: url("/images/weather.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #f1faee;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 2%;
+  color: white;
+  font-weight: 400;
+  font-family: 'Rubik', sans-serif;
+  font-size: 10.6vh;
+}
+
+h2,p {
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  font-weight: lighter;
+  font-size: 3.6vh;
+}
+
+input {
+  border-radius: 5px;
+  background: transparent;
+  margin-right: 8px;
+  box-shadow: 1px 3px 12px 0 white;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 35px;
+  top: 10px;
+  border: none;
+  color: white;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 400;
+  width: 305px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+::placeholder {
+  font-family: "Verdana", sans-serif;
+  font-size: 1em;
+  padding: 2%;
+}
+
+button {
+  padding: 6px;
+  background: transparent;
+  color: white;
+  font-size: 1em;
+  position: absolute;
+  margin-left: 6px;
+  top: auto;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: grey;
+}
+
+/* Main Weather Data Content */
+.weather {
+  margin: 3% 38%;
+  box-shadow: 2px 2px 15px 5px grey;
+  padding: 2%;
+  border-radius: 15px;
+}
+
+.city {
+  font-weight: bolder;
+  margin: 8% auto;
+  font-size: 5.6vh;
+}
+
+img {
+  width: 25%;
+  background-color: grey;
+  border-radius: 15px;
+}
+
+.temp {
+  font-weight: bolder;
+  font-size: 8vh;
+  margin: 4% auto;
+}
+
+.desc {
+  margin: 1% 2%;
+  font-size: 3.2vh;
+}
+
+/* Footer */
+footer p{
+  font-style: "Verdana", sans-serif;
+  font-size: 2vh;
+  margin-top: 3%;
+}
